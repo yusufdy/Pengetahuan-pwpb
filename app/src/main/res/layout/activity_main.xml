@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp"
+        android:hint="Berat"/><!--Input Nilai berat badan-->
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp"
+        android:hint="Tinggi"/><!--Input Nilai Tinggi badan-->
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp"
+        android:onClick="calculateBMI"
+        android:text="@string/calculateBMI"
+        android:hint="Hasil"/><!--Tombol untuk memulai hitungan ondex Berat Badan-->
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="245dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp" /><!--Menampilkan ondex berat badan-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ondex"
+        android:layout_marginTop="420dp" />
+
+</RelativeLayout>
